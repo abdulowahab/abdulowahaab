@@ -5,13 +5,46 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Abdul Owahab — Accounting Professional</title>
   <style>
-    :root{--bg:#000000;--card:#0b1220;--accent:#06b6d4;--muted:#9aa4b2;color-scheme:dark}
+    :root{
+      --bg1: #0a2342;  /* Blue (dark navy) */
+      --bg2: #000000;  /* Black */
+      --accent: #38bdf8; /* Sky blue */
+      --muted: #9aa4b2;
+      color-scheme:dark
+    }
+    body{
+      font-family: 'Inter', system-ui, 'Segoe UI', Roboto, Helvetica, Arial;
+      margin:0;
+      background: linear-gradient(180deg, var(--bg1) 0%, var(--accent) 60%, var(--bg2) 100%);
+      color: #e6eef6;
+    }
+    .container{max-width:980px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#0a2342);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+    h1{
+      margin:0;font-size:28px;
+      color: #fff !important;
+      letter-spacing: 1px;
+    }
+    /* Accent buttons and links */
+    a.btn, a.cta {
+      background: var(--accent);
+      color: #022;
+      font-weight: 700;
+      border-radius: 10px;
+      text-decoration: none;
+      padding: 10px 14px;
+    }
+    /* Project cards */
+    section.card, article {
+      background: linear-gradient(180deg, rgba(56,189,248,0.12), rgba(10,35,66,0.08));
+      border: 1px solid rgba(56,189,248,0.12);
+    }
+    /* ...Keep rest of your previous styles... */
     *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:0; background:linear-gradient(180deg,#071028 0%, #071827 60%); color:#e6eef6}
     .container{max-width:980px;margin:36px auto;padding:28px}
     header{display:flex;gap:20px;align-items:center}
     .avatar{width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
-    h1{margin:0;font-size:28px}
     p.lead{color:var(--muted);margin:6px 0 0}
     nav{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
     a.btn{padding:8px 12px;background:rgba(255,255,255,0.04);border-radius:10px;color:inherit;text-decoration:none;border:1px solid rgba(255,255,255,0.03)}
@@ -35,7 +68,7 @@
   <header style="display:flex; align-items:center; gap:18px; margin-bottom:28px;">
     <img src="https://via.placeholder.com/120" alt="Your photo" style="width:120px; height:120px; border-radius:12px; object-fit:cover; box-shadow:0 6px 18px rgba(2,6,23,0.08);">
     <div>
-      <h1 style="margin:0; font-size:28px;">ABDUL OWAHAB</h1>
+      <h1 style="margin:0; font-size:28px; color:#fff;">ABDUL OWAHAB</h1>
       <p style="margin:6px 0 0; color:#475569;">Accountant • ICAB Student • Articleship at Deloitte Bangladesh</p>
       <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap;">
         <!-- Replace hrefs with your real profiles -->
@@ -50,7 +83,7 @@
   <section style="background:#f8fafc; padding:18px; border-radius:12px; margin-bottom:18px;">
     <h2 style="margin:0 0 8px 0; font-size:18px;">About me</h2>
     <p style="margin:0; color:#334155;">
-      Ami ekjon dedicated accounting graduate currently doing articleship at Deloitte Bangladesh. Financial reporting, audit, and data analysis e amar proshikhhon ache. Ami Excel & basic Python use korte pari. Portfolio te amar projects, experience, ebong contact details pabe.
+      Ami ekjon dedicated accounting graduate currently doing articleship at Deloitte Bangladesh. Financial reporting, audit, and data analysis e amar proshikhhon ache. Ami Excel & basic Python use ko[...]
     </p>
   </section>
 
@@ -82,7 +115,7 @@
 
     <article style="background:#fff; padding:14px; border-radius:12px; border:1px solid #e6eef6; margin-bottom:10px;">
       <h3 style="margin:0 0 6px 0;">Audit Internship — Company X</h3>
-      <p style="margin:0 0 6px 0; color:#475569;">Worked on financial statement testing, sample selection, and audit documentation. Assisted seniors in preparing Audit Program and led inventory verification for one branch.</p>
+      <p style="margin:0 0 6px 0; color:#475569;">Worked on financial statement testing, sample selection, and audit documentation. Assisted seniors in preparing Audit Program and led inventory verifi[...]
       <small style="color:#94a3b8;">Jan 2025 — Apr 2025</small>
     </article>
 
